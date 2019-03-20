@@ -13,6 +13,7 @@ namespace HelloConsoleBatch
 
 
             Console.WriteLine("Program na powitanie! Wykonał: Michał P.");
+            Console.WriteLine("");
             string imie;
             string nazwisko;
             int wiek;
