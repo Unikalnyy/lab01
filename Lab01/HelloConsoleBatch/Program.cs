@@ -4,30 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloConsoleApp
+namespace HelloConsoleBatch
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj imię: ");
-            string imie = Console.ReadLine();
+            Console.WriteLine("Program na powitanie.");
+            string imie = args[0];
+            string nazwisko = args[1];
+            Console.WriteLine("Witaj {0} {1}. Czy Pan {0} w rzeczywistości nazywa się {1}", imie, nazwisko);
 
-            Console.WriteLine("Podaj nazwisko: ");
-            string nazwisko = Console.ReadLine();
-            Console.WriteLine("Witaj {0} {1}. Czy Pan {0} w rzeczywistości nazywa się {1}" ,imie,nazwisko);
-
-            Console.WriteLine("");
 
             Console.WriteLine("System do sprawdzania ile lat zostało do Emerytury.");
-            Console.WriteLine("Podaj swój wiek: ");
-            int wiek = Convert.ToInt32(Console.ReadLine());
-            if(wiek < 0)
+            int wiek = Convert.ToInt32(args[2]);
+            if (wiek < 0)
             {
                 Console.WriteLine("Błedne dane!");
                 Console.ReadKey();
             }
-            else if(wiek < 67)
+            else if (wiek < 67)
             {
                 Console.WriteLine("Lata pozostałe do emerytury: {0}", 67 - wiek);
                 Console.ReadKey();
