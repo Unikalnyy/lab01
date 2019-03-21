@@ -37,6 +37,7 @@
             this.buttonOK = new System.Windows.Forms.Button();
             this.labelKomunikat1 = new System.Windows.Forms.Label();
             this.labelKomunikat2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelImie
@@ -90,7 +91,7 @@
             this.textBoxWiek.ForeColor = System.Drawing.Color.White;
             this.textBoxWiek.Location = new System.Drawing.Point(116, 92);
             this.textBoxWiek.Name = "textBoxWiek";
-            this.textBoxWiek.Size = new System.Drawing.Size(47, 26);
+            this.textBoxWiek.Size = new System.Drawing.Size(34, 26);
             this.textBoxWiek.TabIndex = 5;
             // 
             // label1
@@ -120,27 +121,42 @@
             // labelKomunikat1
             // 
             this.labelKomunikat1.AutoSize = true;
-            this.labelKomunikat1.Location = new System.Drawing.Point(36, 216);
+            this.labelKomunikat1.Font = new System.Drawing.Font("Calibri Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKomunikat1.Location = new System.Drawing.Point(336, 61);
             this.labelKomunikat1.Name = "labelKomunikat1";
-            this.labelKomunikat1.Size = new System.Drawing.Size(85, 13);
+            this.labelKomunikat1.Size = new System.Drawing.Size(145, 23);
             this.labelKomunikat1.TabIndex = 7;
-            this.labelKomunikat1.Text = "labelKomunikat1";
+            this.labelKomunikat1.Text = "Przykładowy tekst";
             this.labelKomunikat1.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelKomunikat2
             // 
             this.labelKomunikat2.AutoSize = true;
-            this.labelKomunikat2.Location = new System.Drawing.Point(36, 273);
+            this.labelKomunikat2.Font = new System.Drawing.Font("Calibri Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelKomunikat2.Location = new System.Drawing.Point(336, 146);
             this.labelKomunikat2.Name = "labelKomunikat2";
-            this.labelKomunikat2.Size = new System.Drawing.Size(85, 13);
+            this.labelKomunikat2.Size = new System.Drawing.Size(155, 23);
             this.labelKomunikat2.TabIndex = 8;
-            this.labelKomunikat2.Text = "labelKomunikat2";
+            this.labelKomunikat2.Text = "Przykładowy tekst2";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(139, 186);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(72, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Wyczyść";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelKomunikat2);
             this.Controls.Add(this.labelKomunikat1);
             this.Controls.Add(this.buttonOK);
@@ -169,6 +185,7 @@
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Label labelKomunikat1;
         private System.Windows.Forms.Label labelKomunikat2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

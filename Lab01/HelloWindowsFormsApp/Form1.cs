@@ -48,8 +48,17 @@ namespace HelloWindowsFormsApp
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
+            if ((textBoximie.Text.Length <= 0) || (textBoxnazwisko.Text.Length <= 0))
+            {
+                labelKomunikat1.Text = "Wprowadź dane!";
+            }
+            else
+            {
+                labelKomunikat1.Text = "Witaj, " + textBoximie.Text + " " + textBoxnazwisko.Text + "!";
+            }
+            
 
-            labelKomunikat1.Text = "Witaj, " + textBoximie.Text + " " + textBoxnazwisko.Text + "!";
+
             if(textBoxWiek.Text.Length <= 0)
             {
                 labelKomunikat2.Text = "";
@@ -73,6 +82,15 @@ namespace HelloWindowsFormsApp
             }
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBoximie.Text = "";
+            textBoxnazwisko.Text = "";
+            textBoxWiek.Text = "";
+            labelKomunikat1.Text = "";
+            labelKomunikat2.Text = "";
         }
     }
 }
