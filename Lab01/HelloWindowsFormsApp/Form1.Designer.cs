@@ -58,7 +58,7 @@
             this.textBoximie.ForeColor = System.Drawing.Color.White;
             this.textBoximie.Location = new System.Drawing.Point(116, 23);
             this.textBoximie.Name = "textBoximie";
-            this.textBoximie.Size = new System.Drawing.Size(100, 26);
+            this.textBoximie.Size = new System.Drawing.Size(120, 26);
             this.textBoximie.TabIndex = 1;
             // 
             // textBoxnazwisko
@@ -67,7 +67,7 @@
             this.textBoxnazwisko.ForeColor = System.Drawing.Color.White;
             this.textBoxnazwisko.Location = new System.Drawing.Point(116, 58);
             this.textBoxnazwisko.Name = "textBoxnazwisko";
-            this.textBoxnazwisko.Size = new System.Drawing.Size(100, 26);
+            this.textBoxnazwisko.Size = new System.Drawing.Size(120, 26);
             this.textBoxnazwisko.TabIndex = 3;
             this.textBoxnazwisko.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -90,7 +90,7 @@
             this.textBoxWiek.ForeColor = System.Drawing.Color.White;
             this.textBoxWiek.Location = new System.Drawing.Point(116, 92);
             this.textBoxWiek.Name = "textBoxWiek";
-            this.textBoxWiek.Size = new System.Drawing.Size(100, 26);
+            this.textBoxWiek.Size = new System.Drawing.Size(47, 26);
             this.textBoxWiek.TabIndex = 5;
             // 
             // label1
@@ -109,17 +109,18 @@
             // 
             this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonOK.ForeColor = System.Drawing.Color.Green;
-            this.buttonOK.Location = new System.Drawing.Point(99, 146);
+            this.buttonOK.Location = new System.Drawing.Point(116, 146);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(128, 34);
+            this.buttonOK.Size = new System.Drawing.Size(120, 34);
             this.buttonOK.TabIndex = 6;
             this.buttonOK.Text = "Sprawdź!";
             this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // labelKomunikat1
             // 
             this.labelKomunikat1.AutoSize = true;
-            this.labelKomunikat1.Location = new System.Drawing.Point(36, 236);
+            this.labelKomunikat1.Location = new System.Drawing.Point(36, 216);
             this.labelKomunikat1.Name = "labelKomunikat1";
             this.labelKomunikat1.Size = new System.Drawing.Size(85, 13);
             this.labelKomunikat1.TabIndex = 7;
